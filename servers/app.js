@@ -13,6 +13,6 @@ var saticpath = path.join(__diranme,"../static");
 
 app.use(express.static(saticpath));
 
-app.listen(80,,function(){
+app.listen(80,function(){
 	console.log("open http://127.0.0.1:80");
 })
