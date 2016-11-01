@@ -1,14 +1,15 @@
-var express = require("express");
+//导入 express 模块
+var express = require('express');
+//实例化
+var app = express();
 
-var app = new express();
+//加载 token 模块
+require("./token")(app);
 
-var path = require("path");
 
-require("./token.js")(app);
-
-var saticpath = path.join(__dirname,"../static");
-
-app.use(express.static(saticpath));
-app.listen(80, "0.0.0.0", function() {
-	console.log('http://127.0.0.1:80');
+var server = require('http').Server(app);
+server.listen(80, "0.0.0.0", function () {
+	var _host  = server.address().address;
+  	var _port  = server.address().port;
+  	console.log('Example app listening at http://%s:%s', _host, _port);
 });
