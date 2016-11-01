@@ -9,7 +9,7 @@ var path = require("path");
 require("./token.js")(app);
 
 
-var saticpath = path.join(__diranme,"../static");
+var saticpath = path.join(__dirname,"../static");
 
 app.use(express.static(saticpath));
 
