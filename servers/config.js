@@ -5,6 +5,6 @@ module.exports = function(){
 		//AppSecret(应用密钥)
 		appsecret: '7XuOSMa1HU6SaC4HA5tNvJObs1ZtSK9pssFFJSLZpqC',
 		//Token(令牌)
-		token: 'wxh9503'
+		token: 'nice'
 	};
 };
