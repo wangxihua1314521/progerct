@@ -12,7 +12,7 @@ function sha1(str){
 }
 
 function main(app) {
-	app.use('/weixin/wxh', function(req, res, next){
+	app.use('/wechat/jssdk', function(req, res, next){
 		// url 
 	   	var query = req.query;
 		var signature = query.signature;

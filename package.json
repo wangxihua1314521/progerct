@@ -25,6 +25,7 @@
     "gulp-ruby-sass": "^2.1.0",
     "gulp-swig": "^0.8.0",
     "gulp-uglify": "^2.0.0",
-    "request": "^2.75.0"
+    "request": "^2.75.0",
+    "wechat-api": "^1.31.0"
   }
 }
